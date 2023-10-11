@@ -11,5 +11,6 @@ export const showLoader = async ({ params }) => {
   const id = params.id
   const response = await fetch(url + id)
   const assignment = await response.json()
+  console.log(assignment)
   return assignment
 }
