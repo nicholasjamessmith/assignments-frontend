@@ -22,6 +22,7 @@ export const createAction = async ({ request }) => {
 
 export const updateAction = async ({ request, params }) => {
   const id = params.id
+  console.log(id)
   const formData = await request.formData();
   const updatedAssignment = {
     subject: formData.get("subject"),
@@ -29,7 +30,7 @@ export const updateAction = async ({ request, params }) => {
     due: formData.get("due"),
     notes: formData.get("notes"),
   }
-  await fetch(url + id, {
+  await fetch(url + "/" + id, {
     method: "put",
     headers: {
       "Content-Type": "application/json"
@@ -41,8 +42,9 @@ export const updateAction = async ({ request, params }) => {
 
 export const deleteAction = async ({ params }) => {
   const id = params.id
-  await fetch(url + id, {
+  await fetch(url + "/" + id, {
     method: "delete"
   })
+  console.log(id)
   return redirect("/")
 }
