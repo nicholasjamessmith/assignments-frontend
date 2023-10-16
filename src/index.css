@@ -11,25 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Nunito&display=swap');
+
 body {
-text-align: center;
-color: darkseagreen;
-background-color:whitesmoke;
+  text-align: center;
+  background-color: whitesmoke;
+  margin: 15%;
+  /*max-width: 60%;*/
+  /*font-family: 'Nunito', sans-serif;*/
 }
 
-.assignment {
-border: 3px solid navy;
-border-radius: 100%;
+.assignment, .show {
+  border: 2px solid rgba(0, 0, 0, .2);
+  border-radius: 1%;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  color: darkseagreen;
 }
 
 h4 {
-color:seagreen;
-font-family: sans-serif;
+  /*color: maroon;*/
+  font-family: 'Nunito', sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 .subject {
-color: black;
+  color: black;
 }
-.id {
-color: rgb(255, 255, 0);
+
+.colorA {
+  color: crimson;
+}
+
+.colorB {
+  color: navy;
+}
+
+.createBtn {
+  color:forestgreen;
+  background-color: silver;
+}
+
+.updateBtn {
+  color: purple;
+  background-color: silver;
+}
+.deleteBtn {
+  color:orangered;
+  background-color: silver;
+}
+.backBtn {
+  color: indianred;
+  background-color: silver;
 }
